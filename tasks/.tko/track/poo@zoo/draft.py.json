@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-07_21-56-41",
+            "content": "@@ -1,42 +1 @@\n-Class Zoo:%0A    def __init__(self, )dfdddfd\n+%0A\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-12-07_22-00-42",
+            "content": "@@ -2,12 +2,41 @@\n lass\n-, animal\n+ Zoo:%0A    def __init__(self, )dfdddfd\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-12-07_22-04-48",
+            "content": "@@ -1,9 +1,30 @@\n-C\n+@@ -2,201 +2,12 @@%0A \n lass\n+%0A-\n  Ani\n@@ -32,17 +32,19 @@\n al(ABC):\n-%0A\n+%250A\n     def \n@@ -69,17 +69,19 @@\n e: str):\n-%0A\n+%250A\n         \n@@ -96,18 +96,22 @@\n e = nome\n-%0A%0A\n+%250A%250A\n     def \n@@ -128,25 +128,27 @@\n _nome(self):\n-%0A\n+%250A\n         prin\n@@ -150,17 +150,19 @@\n  print(f\n-%22\n+%2522\n Eu sou u\n@@ -170,9 +170,11 @@\n (a) \n-%7B\n+%257B\n self\n@@ -182,14 +182,22 @@\n nome\n-%7D!%22)%0A%0A\n+%257D!%2522)%250A%250A\n     \n@@ -216,17 +216,19 @@\n m(self):\n-%0A\n+%250A\n         \n@@ -235,13 +235,28 @@\n pass\n-%0A%0A\n+%250A%250A\n     def\n+%0A+, animal%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-12-07_22-10-12",
+            "content": "@@ -1,8 +1,29 @@\n+@@ -1,205 +1,622 @@%0A-\n Class An\n@@ -32,17 +32,19 @@\n al(ABC):\n-%0A\n+%250A\n     def \n@@ -69,17 +69,19 @@\n e: str):\n-%0A\n+%250A\n         \n@@ -96,18 +96,22 @@\n e = nome\n-%0A%0A\n+%250A%250A\n     def \n@@ -128,25 +128,27 @@\n _nome(self):\n-%0A\n+%250A\n         prin\n@@ -150,17 +150,19 @@\n  print(f\n-%22\n+%2522\n Eu sou u\n@@ -170,9 +170,11 @@\n (a) \n-%7B\n+%257B\n self\n@@ -182,14 +182,22 @@\n nome\n-%7D!%22)%0A%0A\n+%257D!%2522)%250A%250A\n     \n@@ -216,17 +216,19 @@\n m(self):\n-%0A\n+%250A\n         \n@@ -235,16 +235,807 @@\n pass\n-%0A%0A    def sd\n+%250A%250A    def sd%0A+@@ -1,8 +1,28 @@%250A+@@ -1,205 +1,31 @@%25250A-%250A Class An%250A@@ -31,17 +31,19 @@%250A al(ABC):%250A-%25250A%250A+%2525250A%250A     def %250A@@ -68,17 +68,19 @@%250A e: str):%250A-%25250A%250A+%2525250A%250A         %250A@@ -95,18 +95,22 @@%250A e = nome%250A-%25250A%25250A%250A+%2525250A%2525250A%250A     def %250A@@ -127,25 +127,27 @@%250A _nome(self):%250A-%25250A%250A+%2525250A%250A         prin%250A@@ -149,17 +149,19 @@%250A  print(f%250A-%252522%250A+%25252522%250A Eu sou u%250A@@ -169,9 +169,11 @@%250A (a) %250A-%25257B%250A+%2525257B%250A self%250A@@ -181,14 +181,22 @@%250A nome%250A-%25257D!%252522)%25250A%25250A%250A+%2525257D!%25252522)%2525250A%2525250A%250A     %250A@@ -215,17 +215,19 @@%250A m(self):%250A-%25250A%250A+%2525250A%250A         %250A@@ -234,16 +234,60 @@%250A pass%250A-%25250A%25250A    def sd%250A+%2525250A%2525250A    def sd%25250A+@@ -199,7 +199,4 @@%2525250A  def%2525250A- sd%2525250A%25250A%250A%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-12-07_22-13-52",
+            "content": "@@ -200,254 +200,6 @@\n def \n-mover(self):%0A        pass%0A%0Aclass Leao(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Rooaaaaar!%22)%0A%0A    def mover(self):%0A        print(%22Oleao corre imponente pela savana.%0A        %22)%0A\n+sd\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-12-07_22-19-55",
+            "content": "@@ -434,11 +434,20 @@\n  savana.\n+%0A        \n %22)%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-12-07_22-20-03",
+            "content": "@@ -1,554 +1,48 @@\n-Class Animal(ABC):%0A    def __init__(self, nome: str):%0A        self.nome = nome%0A%0A    def apresentar_nome(self):%0A        print(f%22Eu sou um(a) %7Bself.nome%7D!%22)%0A%0A    def fazer_som(self):%0A        pass%0A%0A    def mover(self):%0A        pass%0A%0Aclass Leao(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Rooaaaaar!%22)%0A%0A    def mover(self):%0A        print(%22Oleao corre imponente pela savana.%22)%0Aczxcccccccccccsgiving me jufffjjfjjfjfjjfjfjfjjjfjfjjjfjjfjfjjjfjfjffjjjjjfjjjjjdsssjsjsdjfjjfsdjsskffjjjjksjd\n+@@ -441,19 +441,4 @@%0A .%2522)%250A%0A-czxcccccccccccs%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-12-07_22-31-14",
+            "content": "@@ -441,156 +441,114 @@\n .%22)%0A\n-Como nasjnjcnjnjdkian kajsnj lajn njcomofazer art aattack manyhow dreams house and houabout you%0A%0Aoutside bts dead chance good as we kiss didnt masdasdas\n+czxcccccccccccsgiving me jufffjjfjjfjfjjfjfjfjjjfjfjjjfjjfjfjjjfjfjffjjjjjfjjjjjdsssjsjsdjfjjfsdjsskffjjjjksjd\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-12-07_22-41-03",
+            "content": "@@ -593,17 +593,4 @@\n sdas\n-asdddasdasdas\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-12-07_22-45-56",
+            "content": "@@ -490,16 +490,59 @@\n  art aat\n+tack manyhow dreams house and houabout you%0A\n %0Aoutside\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-12-07_22-49-04",
+            "content": "@@ -544,272 +544,23 @@\n  mas\n-%0Aascczxkkkbreathe you vscode_lsp_terminal_prompt_trackerevery move you make %0Aand every step you take ill be watching you every im %0Aive been watching you cant u see%0Au belong to me every move you makeevery smile you fake%0Asince you dont %0Aonly see a fraid%0Afor you and make\n+dasdasasdddasdasdas\n",
+            "lines": "24"
+        },
+        {
+            "label": "2025-12-07_22-50-44",
+            "content": "@@ -812,121 +812,4 @@\n make\n-very step you take i have been watchingyou%0Aill be watching you%0Aevey move you make%0Aill be watching you%0Aevery you make%0A\n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-12-07_22-52-38",
+            "content": "Class Animal(ABC):\n    def __init__(self, nome: str):\n        self.nome = nome\n\n    def apresentar_nome(self):\n        print(f\"Eu sou um(a) {self.nome}!\")\n\n    def fazer_som(self):\n        pass\n\n    def mover(self):\n        pass\n\nclass Leao(Animal):\n    def __init__(self, nome: str):\n        super().__init__(nome)\n\n    def fazer_som(self):\n        print(\"Rooaaaaar!\")\n\n    def mover(self):\n        print(\"Oleao corre imponente pela savana.\")\nComo nasjnjcnjnjdkian kajsnj lajn njcomofazer art aat\noutside bts dead chance good as we kiss didnt mas\nascczxkkkbreathe you vscode_lsp_terminal_prompt_trackerevery move you make \nand every step you take ill be watching you every im \nive been watching you cant u see\nu belong to me every move you makeevery smile you fake\nsince you dont \nonly see a fraid\nfor you and makevery step you take i have been watchingyou\nill be watching you\nevey move you make\nill be watching you\nevery you make\n",
+            "lines": "35"
+        }
+    ]
+}
