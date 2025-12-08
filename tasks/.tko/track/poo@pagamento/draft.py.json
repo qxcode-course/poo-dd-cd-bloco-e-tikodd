@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-08_15-56-15",
+            "content": "@@ -16,104 +16,8 @@\n     \n-def__init__(self,valor: float, descricao: str)%0A    self.valor = valor%0A    self,descri%C3%A7%C3%A3o = descricao\n+kjkj\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-12-08_15-59-30",
+            "content": "@@ -112,13 +112,8 @@\n escricao\n-%0A    \n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-12-08_16-01-19",
+            "content": "@@ -121,361 +121,4 @@\n     \n-%0A    def validar_valor(self):%0A        i self.valor %3C= 0:%0A            raise Exception(%22Valor inv%C3%A1lido para pagamento.%22)%0A%0A    def resumo(self):%0A        print(f%22Pagamento de R$ %7Bself.valor%7D: %7Bself.descricao%7D%22)%0A%0A    def processar(self):%0A        pass%0A%0Aclass CartaoCredito(Pagamento):%0A    def__init__(self, valor, descricao, numero, nome_titular, imite disponivel\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-12-08_16-07-28",
+            "content": "@@ -478,6 +478,4 @@\n ivel\n- a\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-12-08_16-08-29",
+            "content": "@@ -1,485 +1,30 @@\n-class Payment:%0A    def__init__(self,valor: float, descricao: str)%0A    self.valor = valor%0A    self,descri%C3%A7%C3%A3o = descricao%0A    %0A    def validar_valor(self):%0A        i self.valor %3C= 0:%0A            raise Exception(%22Valor inv%C3%A1lido para pagamento.%22)%0A%0A    def resumo(self):%0A        print(f%22Pagamento de R$ %7Bself.valor%7D: %7Bself.descricao%7D%22)%0A%0A    def processar(self):%0A        pass%0A%0Aclass CartaoCredito(Pagamento):%0A    def__init__(self, valor, descricao, numero, nome_titular, imite disponivel ask\n+@@ -480,6 +480,4 @@%0A el a%0A-sk%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-12-08_16-18-17",
+            "content": "@@ -481,19 +481,5 @@\n l as\n-sdjh %0A    hhcuc\n+k\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-12-08_16-21-13",
+            "content": "@@ -1,498 +1,33 @@\n-class Payment:%0A    def__init__(self,valor: float, descricao: str)%0A    self.valor = valor%0A    self,descri%C3%A7%C3%A3o = descricao%0A    %0A    def validar_valor(self):%0A        i self.valor %3C= 0:%0A            raise Exception(%22Valor inv%C3%A1lido para pagamento.%22)%0A%0A    def resumo(self):%0A        print(f%22Pagamento de R$ %7Bself.valor%7D: %7Bself.descricao%7D%22)%0A%0A    def processar(self):%0A        pass%0A%0Aclass CartaoCredito(Pagamento):%0A    def__init__(self, valor, descricao, numero, nome_titular, imite disponivel assdjh %0A    \n+@@ -491,301 +491,9 @@%0A     %0A-\n supe\n@@ -55,17 +55,19 @@\n scricao)\n-%0A\n+%250A\n     self\n@@ -82,17 +82,19 @@\n = numero\n-%0A\n+%250A\n     self\n@@ -122,17 +122,19 @@\n _titular\n-%0A\n+%250A\n     self\n@@ -175,10 +175,14 @@\n ivel\n-%0A%0A\n+%250A%250A\n     \n@@ -196,25 +196,27 @@\n nit__(self):\n-%0A\n+%250A\n         if s\n@@ -217,33 +217,35 @@\n   if self.valor \n-%3E\n+%253E\n  self.limite_dis\n@@ -244,33 +244,35 @@\n mite_disponivel:\n-%0A\n+%250A\n             rais\n@@ -288,9 +288,11 @@\n on(f\n-%22\n+%2522\n Limi\n@@ -318,119 +318,46 @@\n cart\n-%C3%A3o %7Bself%7D)%0A\n+%25C3%25A3o %257Bself%257D)%250A\n     \n-%0A\n     \n-def processar(self):%0A        if self.valor %3E self.limite_disponivel:%0A            raise Exeption\n+    %0A+hhcuc%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-12-08_16-26-06",
+            "content": "@@ -880,408 +880,4 @@\n tion\n-%0A%0A    def processar (self):%0A        print(f%22PIX enviado via %7Bself.banco%7D usando chave %7Bself.chave%7D%0A    %0A%0Aclass Boleto(Pagamento):%0A    def__init__(self, valor, descricao, codig_barras, vencimento)%0A        super().__init__(valor, descricao)%0A        self.codigo_barras = codigo_barras%0A        self.vencimento = vencimento%0A    %0A    def processar(self):%0A        print(%22Boleto gerado. Aguardando pagamento...%22)\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-12-08_16-29-59",
+            "content": "@@ -1284,230 +1284,4 @@\n ..%22)\n-%0A%0A    processar_pagamento(pagamento: Pagamento):%0A    try:%0A        pagamento.validar_valor()%0A        pagamento.resumo()%0A        pagamento.processar()%0A    except Exception as error:%0A        print(f%22Erro: %7Berror%7D%22)%0A        print \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-12-08_18-29-35",
+            "content": "@@ -1510,13 +1510,4 @@\n int \n-dkjjfjjjj\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-12-08_18-33-59",
+            "content": "@@ -1510,13 +1510,13 @@\n int \n-() %0A     \n+dkjjfjjjj\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-12-08_18-37-49",
+            "content": "@@ -1514,34 +1514,8 @@\n () %0A\n-if __name__ == %22__main__%22%0A\n     \n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-12-08_18-39-55",
+            "content": "@@ -1,12 +1,33 @@\n+@@ -1,1550 +1,45 @@%0A-\n class Paymen\n@@ -28,17 +28,19 @@\n Payment:\n-%0A\n+%250A\n     def_\n@@ -81,17 +81,19 @@\n ao: str)\n-%0A\n+%250A\n     self\n@@ -106,17 +106,19 @@\n  = valor\n-%0A\n+%250A\n     self\n@@ -128,10 +128,20 @@\n scri\n-%C3%A7%C3%A3\n+%25C3%25A7%25C3%25A3\n o = \n@@ -149,22 +149,26 @@\n escricao\n-%0A\n+%250A\n     \n-%0A\n+%250A\n     def \n@@ -179,33 +179,35 @@\n dar_valor(self):\n-%0A\n+%250A\n         i self.v\n@@ -215,14 +215,18 @@\n lor \n-%3C\n+%253C\n = 0:\n-%0A\n+%250A\n     \n@@ -249,17 +249,19 @@\n ception(\n-%22\n+%2522\n Valor in\n@@ -265,9 +265,14 @@\n  inv\n-%C3%A1\n+%25C3%25A1\n lido\n@@ -287,20 +287,26 @@\n gamento.\n-%22)%0A%0A\n+%2522)%250A%250A\n     def \n@@ -314,25 +314,27 @@\n esumo(self):\n-%0A\n+%250A\n         prin\n@@ -336,17 +336,19 @@\n  print(f\n-%22\n+%2522\n Pagament\n@@ -355,17 +355,19 @@\n o de R$ \n-%7B\n+%257B\n self.val\n@@ -372,12 +372,16 @@\n alor\n-%7D: %7B\n+%257D: %257B\n self\n@@ -394,13 +394,21 @@\n icao\n-%7D%22)%0A%0A\n+%257D%2522)%250A%250A\n     \n@@ -419,33 +419,35 @@\n processar(self):\n-%0A\n+%250A\n         pass%0A%0Acl\n@@ -442,18 +442,22 @@\n     pass\n-%0A%0A\n+%250A%250A\n class Ca\n@@ -471,33 +471,35 @@\n dito(Pagamento):\n-%0A\n+%250A\n     def__init__(\n@@ -568,17 +568,19 @@\n  assdjh \n-%0A\n+%250A\n     supe\n@@ -604,25 +604,27 @@\n r,descricao)\n-%0A\n+%250A\n     self.num\n@@ -635,17 +635,19 @@\n = numero\n-%0A\n+%250A\n     self\n@@ -675,17 +675,19 @@\n _titular\n-%0A\n+%250A\n     self\n@@ -724,18 +724,22 @@\n sponivel\n-%0A%0A\n+%250A%250A\n     def \n@@ -749,25 +749,27 @@\n nit__(self):\n-%0A\n+%250A\n         if s\n@@ -770,33 +770,35 @@\n   if self.valor \n-%3E\n+%253E\n  self.limite_dis\n@@ -797,33 +797,35 @@\n mite_disponivel:\n-%0A\n+%250A\n             rais\n@@ -837,17 +837,19 @@\n eption(f\n-%22\n+%2522\n Limite i\n@@ -871,24 +871,37 @@\n cart\n-%C3%A3o %7Bself%7D)%0A\n+%25C3%25A3o %257Bself%257D)%250A\n     \n-%0A\n+%250A\n     \n@@ -912,33 +912,35 @@\n processar(self):\n-%0A\n+%250A\n         if self.\n@@ -949,9 +949,11 @@\n lor \n-%3E\n+%253E\n  sel\n@@ -972,17 +972,19 @@\n ponivel:\n-%0A\n+%250A\n         \n@@ -1001,18 +1001,22 @@\n Exeption\n-%0A%0A\n+%250A%250A\n     def \n@@ -1028,25 +1028,27 @@\n ssar (self):\n-%0A\n+%250A\n         prin\n@@ -1050,17 +1050,19 @@\n  print(f\n-%22\n+%2522\n PIX envi\n@@ -1069,17 +1069,19 @@\n ado via \n-%7B\n+%257B\n self.ban\n@@ -1082,17 +1082,19 @@\n lf.banco\n-%7D\n+%257D\n  usando \n@@ -1099,17 +1099,19 @@\n o chave \n-%7B\n+%257B\n self.cha\n@@ -1116,16 +1116,24 @@\n have\n-%7D%0A    %0A%0A\n+%257D%250A    %250A%250A\n clas\n@@ -1148,25 +1148,27 @@\n (Pagamento):\n-%0A\n+%250A\n     def__ini\n@@ -1220,17 +1220,19 @@\n cimento)\n-%0A\n+%250A\n         \n@@ -1265,17 +1265,19 @@\n scricao)\n-%0A\n+%250A\n         \n@@ -1310,17 +1310,19 @@\n o_barras\n-%0A\n+%250A\n         \n@@ -1353,14 +1353,18 @@\n ento\n-%0A\n+%250A\n     \n-%0A\n+%250A\n     \n@@ -1383,17 +1383,19 @@\n r(self):\n-%0A\n+%250A\n         \n@@ -1400,17 +1400,19 @@\n   print(\n-%22\n+%2522\n Boleto g\n@@ -1445,12 +1445,18 @@\n o...\n-%22)%0A%0A\n+%2522)%250A%250A\n     \n@@ -1501,17 +1501,19 @@\n to):\n-%0A\n+%250A\n     try:\n %0A   \n@@ -1508,17 +1508,19 @@\n     try:\n-%0A\n+%250A\n         \n@@ -1544,17 +1544,19 @@\n _valor()\n-%0A\n+%250A\n         \n@@ -1573,17 +1573,19 @@\n resumo()\n-%0A\n+%250A\n         \n@@ -1605,17 +1605,19 @@\n cessar()\n-%0A\n+%250A\n     exce\n@@ -1638,17 +1638,19 @@\n s error:\n-%0A\n+%250A\n         \n@@ -1660,25 +1660,35 @@\n nt(f\n-%22\n+%2522\n Erro: \n-%7B\n+%257B\n error\n-%7D%22)%0A\n+%257D%2522)%250A\n     \n@@ -1700,17 +1700,19 @@\n rint () \n-%0A\n+%250A\n if __nam\n@@ -1722,17 +1722,19 @@\n  == \n-%22\n+%2522\n __main__\n %22.%0A%0A\n@@ -1733,13 +1733,81 @@\n in__\n-%22.%0A%0A     \n+%2522.%250A%250A     %0A+@@ -1539,10 +1539,8 @@%250A n__%252522%250A-.%25250A%250A %25250A   %250A%0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-12-08_18-53-17",
+            "content": "@@ -474,16 +474,24 @@\n sponivel\n+ assdjh \n %0A    sup\n",
+            "lines": "54"
+        },
+        {
+            "label": "2025-12-08_19-03-11",
+            "content": "class Payment:\n    def__init__(self,valor: float, descricao: str)\n    self.valor = valor\n    self,descri\u00e7\u00e3o = descricao\n    \n    def validar_valor(self):\n        i self.valor <= 0:\n            raise Exception(\"Valor inv\u00e1lido para pagamento.\")\n\n    def resumo(self):\n        print(f\"Pagamento de R$ {self.valor}: {self.descricao}\")\n\n    def processar(self):\n        pass\n\nclass CartaoCredito(Pagamento):\n    def__init__(self, valor, descricao, numero, nome_titular, imite disponivel\n    super().__init__(valor,descricao)\n    self.numero = numero\n    self. nome_titular = nome_titular\n    self.limite_disponivel = limite_disponivel\n\n    def __init__(self):\n        if self.valor > self.limite_disponivel:\n            raise Esception(f\"Limite insuficiente no cart\u00e3o {self})\n    \n    def processar(self):\n        if self.valor > self.limite_disponivel:\n            raise Exeption\n\n    def processar (self):\n        print(f\"PIX enviado via {self.banco} usando chave {self.chave}\n    \n\nclass Boleto(Pagamento):\n    def__init__(self, valor, descricao, codig_barras, vencimento)\n        super().__init__(valor, descricao)\n        self.codigo_barras = codigo_barras\n        self.vencimento = vencimento\n    \n    def processar(self):\n        print(\"Boleto gerado. Aguardando pagamento...\")\n\n    processar_pagamento(pagamento: Pagamento):\n    try:\n        pagamento.validar_valor()\n        pagamento.resumo()\n        pagamento.processar()\n    except Exception as error:\n        print(f\"Erro: {error}\")\n        print () \nif __name__ == \"__main__\".\n\n     ",
+            "lines": "54"
+        }
+    ]
+}
