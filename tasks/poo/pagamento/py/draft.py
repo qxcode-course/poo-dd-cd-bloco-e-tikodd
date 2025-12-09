@@ -1,54 +1,114 @@
-class Payment:
-    def__init__(self,valor: float, descricao: str)
-    self.valor = valor
-    self,descrição = descricao
+class Boleto(pagamento):
+    def __init__(self, 
+                valor: float,
+                descriacao: str,
+                codigoDeBarra: str,
+                dataVencimento: str):
+    super().__init__(valor, descricao);
+    self.__codigoDebarra: str = codigoDeBarra;
+    self.__dataVencimento: str = dataVencimento;
+
+    @property
+    def codigoDeBarra(self) -> str:
+        reurn self.__codigoDeBarra;
     
-    def validar_valor(self):
-        i self.valor <= 0:
-            raise Exception("Valor inválido para pagamento.")
+    @property
+    def dataVencimento(self) -> str:
+        return self.__dataVencimento;
+
+    def processar(sef)
+        print('Boleto gerado.Aguardando pagamento...');
+
+from abc import ABC, abstractmethod;
+
+class Pagamento(ABC):
+    def __init__(self,
+                valor: float,
+                decricao: str):
+        self._valor: float = valor;
+        self._descricao: str = decricao;
+
+    @property
+    def valor(self) -> float:
+    return self._valor;
+
+    @property
+    def descricao(self) -> str:
+    return self._descricao;
+
+    @valor.setter
+    def valor(self, valor: float):
+        self._valor = valor;
+
+    @descricao.setter
+    def descricao(self, descricao: str):
+        self. descricao = descricao;
 
     def resumo(self):
-        print(f"Pagamento de R$ {self.valor}: {self.descricao}")
+        print(f'Pagamento de R$ {self.valor: .2f}: {self.descricao}')
 
+    def validarValor(self) -> bool:
+        if self.valor <= 0:
+            return False;
+
+        return True;
+
+    @abstractmethod
     def processar(self):
-        pass
+        pass;
+
+from Pagamento import Pagamento;
 
 class CartaoCredito(Pagamento):
-    def__init__(self, valor, descricao, numero, nome_titular, imite disponivel
-    super().__init__(valor,descricao)
-    self.numero = numero
-    self. nome_titular = nome_titular
-    self.limite_disponivel = limite_disponivel
+    def __init__(self, 
+                valor: float,
+                descricao: str,
+                numero: str,
+                nomeTitular: str,
+                limiteDisponivel: float):
+        super().__init__(valor,descricao);
+        self.__numero: str = numero;
+        self.__nomeTitular: str - nomeTitular;
+        self.__limiteDisponivel: float = limiteDisponivel
 
-    def __init__(self):
-        if self.valor > self.limite_disponivel:
-            raise Esception(f"Limite insuficiente no cartão {self})
+    @property
+    def numero(self) -> str:
+        return self.__numero;
+
+    @property
+    def nomeTitular(self) -> str:
+        return self.__nomeTitular;
+
+    @property
+    def limiteDisponivel(self) -> float:
+        return self.__limiteDisponivel;
     
+    @imiteDisponivel.setter
+    def limiteDisponivel(self, valor: float):
+        self.__limiteDisponivel = valor;
+
     def processar(self):
-        if self.valor > self.limite_disponivel:
-            raise Exeption
+        if self.valor > self.limiteDiponivel:
+            print(f'Erro: Limite insufiente no cartao')
+            return;
 
-    def processar (self):
-        print(f"PIX enviado via {self.banco} usando chave {self.chave}
-    
+        self.limiteDiponivel -= self.valor;
+        self.valor = 0;
+        self.descricao = '';
 
-class Boleto(Pagamento):
-    def__init__(self, valor, descricao, codig_barras, vencimento)
-        super().__init__(valor, descricao)
-        self.codigo_barras = codigo_barras
-        self.vencimento = vencimento
-    
-    def processar(self):
-        print("Boleto gerado. Aguardando pagamento...")
+        print(f'Pagamento aprovado no cartao {self.nomeTitular}. Limite restante:')
+        return;
 
-    processar_pagamento(pagamento: Pagamento):
-    try:
-        pagamento.validar_valor()
-        pagamento.resumo()
-        pagamento.processar()
-    except Exception as error:
-        print(f"Erro: {error}")
-        print () 
-if __name__ == "__main__".
+from Pagamento import Pagamento;
 
-     
+class Pix(pagamento):
+    def __init__(self
+                valor: float,
+                decricao: str,
+                chave: str,
+                banco: str):
+        super().__init__(valor,descricao):
+        self.__chave: str = chave;
+        self.__banco: str = banco;
+
+
