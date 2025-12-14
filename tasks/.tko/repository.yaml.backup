@@ -12,13 +12,15 @@ sources:
   type: clone
   branch: master
   cache_path: ''
-  cache_timestamp: '2025-12-09 18:50:09'
+  cache_timestamp: '2025-12-14 00:20:08'
   filters:
   - herança
 expanded:
 - poo@campanha-principal
 - poo@bloco_f-herança-i
-tasks: {}
+tasks:
+  poo@zoo: '{rate:100, guide:video, alone:9, study:150}'
+  poo@pagamento: '{rate:100, human:amigo, alone:8, study:180}'
 flags:
   quests: 0
   tracks: 0
@@ -26,4 +28,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@bloco_f-herança-i
+selected: poo@pagamento

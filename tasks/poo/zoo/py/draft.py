@@ -1,35 +1,75 @@
-Class Animal(ABC):
-    def __init__(self, nome: str):
-        self.nome = nome
+from abc import ABC, abstractmethod;
 
-    def apresentar_nome(self):
-        print(f"Eu sou um(a) {self.nome}!")
+class Animal (ABC):
+    def __init__(self, nome: str = 'criatura'):
+        self._nome: str = nome;
 
-    def fazer_som(self):
+    @property
+    def nome(self) -> str:
+        return self._nome;
+
+    @nome.setter
+    def nome(self, nome: str):
+        self._nome = nome;
+
+    def apresentarNome(self):
+        print(f'eu sou um(a) {self.nome}');
+
+    @abstractmethod
+    def fazerSom(self):
         pass
 
+    @abstractmethod
     def mover(self):
         pass
 
-class Leao(Animal):
+class Cachorro(Animal):
     def __init__(self, nome: str):
-        super().__init__(nome)
+        super().__init__(nome);
 
-    def fazer_som(self):
-        print("Rooaaaaar!")
+    def fazerSom(self):
+        print('Au au au!');
 
     def mover(self):
-        print("Oleao corre imponente pela savana.")
-Como nasjnjcnjnjdkian kajsnj lajn njcomofazer art aat
-outside bts dead chance good as we kiss didnt mas
-ascczxkkkbreathe you vscode_lsp_terminal_prompt_trackerevery move you make 
-and every step you take ill be watching you every im 
-ive been watching you cant u see
-u belong to me every move you makeevery smile you fake
-since you dont 
-only see a fraid
-for you and makevery step you take i have been watchingyou
-ill be watching you
-evey move you make
-ill be watching you
-every you make
+        print(f'O cachorro {self.nome} está correndo');
+
+class Urso(Animal):
+    def __init__(self, nome: str):
+        super().__init__(nome);
+
+    def fazerSom(self):
+        print('uar!');
+
+    def mover(self):
+        print(f'O urso {self.nome} está comendo mel');
+
+class Sapo(Animal):
+    def __init__(self, nome: str):
+        super().__init__(nome);
+
+    def fazerSom(self):
+        print('uebete uebete!');
+
+    def mover(self):
+        print(f'O sapo {self.nome} está pulando');
+
+
+cachorro: Cachorro = Cachorro('Caramelo');
+urso: Urso = Urso('Baloo');
+sapo: Sapo = Sapo('Xena');
+
+def apresentarAnimal(animal: Animal):
+    print(f'=====[{type(animal).__name__}]=====');
+    animal.apresentarNome();
+    animal.fazerSom();
+    animal.mover();
+    print(f'=====[{type(animal).__name__}]=====\n');
+
+listaAnimais = [cachorro, urso, sapo];
+for animal in listaAnimais:
+    apresentarAnimal(animal);
+    
+
+
+
+
